@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ung_dung_may_tinh</title>
+</head>
+<body>
+<form>
+    <input type="number" name="so_1" id="so_1" >
+    <input type="number" name="so_2" id="so_2" >
+</form>
+<script>
+    function cong() {
+        var a = parseInt(document.getElementById("so_1").value);
+        var b = parseInt(document.getElementById("so_2").value);
+        var c = a + b;
+        alert('ket qua = ' + c)
+    }
+
+    function tru() {
+        var a = document.getElementById("so_1").value;
+        var b = document.getElementById("so_2").value;
+        var c = a - b;
+        alert('ket qua = ' + c)
+
+    }
+    function nhan() {
+        var a = document.getElementById("so_1").value;
+        var b = document.getElementById("so_2").value;
+        var c = a*b;
+        alert('ket qua = ' + c)
+    }
+    function chia() {
+        var a = document.getElementById("so_1").value;
+        var b = document.getElementById("so_2").value;
+        var c = a/b
+        alert('ket qua = ' +c)
+    }
+</script>
+<button type="button" onclick="cong()"> Addition (+) </button>
+<button type="button" onclick="tru()"> Addition (-) </button>
+<button type="button" onclick="nhan()"> Addition (*) </button>
+<button type="button" onclick="chia()"> Addition (/) </button>
+</body>
+</html>
